@@ -5,46 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Jambotics</title>
 </head>
 <body>
+    <!--
+        Top nav
+    -->
     <header>
         <nav class="Nav">
             <div class="NavContainer">
-                <a class="NavLogo" to='/'>
+                <a class="NavLogo" href='/'>
                     Jambotics  <i class="fas fa-robot"></i>
                 </a>
             </div>
-            <div class="Hamburger Menu">
+            <div class="HamburgerMenu">
                 <ul>
                     <li>
-                        <a class="NavLink" to='/'}>Home</a>
+                        <a class="NavLink" href='/'}>Home</a>
                     </li>
                     <li>
-                        <a class="NavLink" to='/about'>About</a>
+                        <a class="NavLink" href='/about'>About</a>
                     </li>
                     <li>
-                        <a class="NavLink" to='/projects' >Projects</a>
+                        <a class="NavLink" href='/projects' >Projects</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <!--
+        hero section
+    -->
     <div class='HeroSection'>
         <video loop autoPlay muted src="./assets/MVI_0322.MP4">
         <h1>Future Awaits</h1>
         <p>For everything tech related</p>
     </div>
+    <!--
+        updates
+    -->
     <div class="UpdatesSection">
         <h1>Lastest Updates</h1>
-        <div class="UpdatesWrapper">
+        <div class="UpdatesWrapper" id="updates">
+
         </div>
     </div>
+    <!--
+        footer
+    -->
     <footer class='Footer'>
         <div class="FooterWrapper">
             <ul class='FooterInner'>
                 <li class='FooterItem'>
-                    <a><i class="fab fa-twitter"></a>
+                    <a><i class="fab fa-twitter"></i></a>
                 </li>
                 <li class='FooterItem'>
                     <a><i class="fab fa-linkedin-in"></i></a>
@@ -55,7 +70,6 @@
             </ul>
         </div>
     </footer>
-    
 </body>
 <script src="index.js"></script>
 </html>
