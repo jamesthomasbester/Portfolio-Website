@@ -1,27 +1,27 @@
 const projects =     [
     {
         "id": 1,
-        "Title": "Crossword Generator",
+        "Title": "dynamic README.md Generator",
         "datetime": "January 07, 2022 1:54:16 PM",
-        "Tag": "Javascript",
-        "Image": "map",
-        "Link": "/weatherApp"
+        "Tag": "node.js",
+        "Image": "readme.png",
+        "Link": "https://jamesthomasbester.github.io/CocktailApp/index.html"
     },
     {
         "id": 2,
-        "Title": "React Calculator App",
+        "Title": "Cocktail Recipe website",
         "datetime": "January 08, 2022 1:54:16 PM",
-        "Tag": "React",
-        "Image": "calc",
-        "Link": "/CalculatorApp"
+        "Tag": "Javascript",
+        "Image": "cocktail.png",
+        "Link": "https://jamesthomasbester.github.io/CocktailApp/index.html"
     },
     {
         "id": 3,
         "Title": "Weather App",
         "datetime": "November 20, 2021 12:35:49 PM",
         "Tag": "Javascript",
-        "Image": "IMG_4795",
-        "Link": "/CalculatorApp"
+        "Image": "weather.png",
+        "Link": "https://jamesthomasbester.github.io/WeatherApp/"
     },
     {
         "id": 4,
