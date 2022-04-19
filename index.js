@@ -49,7 +49,7 @@ const projects =     [
         "Title": "Javascript Quiz",
         "datetime": "November 20, 2021 12:35:49 PM",
         "Tag": "Javascript",
-        "Image": "JavascriptQuiz.png",
+        "Image": "javascriptQuiz.png",
         "Link": "https://jamesthomasbester.github.io/JavascriptQuiz/",
         "Code": "https://github.com/jamesthomasbester/JavascriptQuiz"
     }
