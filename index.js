@@ -5,7 +5,8 @@ const projects =     [
         "datetime": "January 07, 2022 1:54:16 PM",
         "Tag": "node.js",
         "Image": "readme.png",
-        "Link": "https://jamesthomasbester.github.io/CocktailApp/index.html"
+        "Link": "https://jamesthomasbester.github.io/CocktailApp/index.html",
+        "Code": "https://github.com/jamesthomasbester/DyanamicReadmeGenerator"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@ const projects =     [
         "datetime": "January 08, 2022 1:54:16 PM",
         "Tag": "Javascript",
         "Image": "cocktail.png",
-        "Link": "https://jamesthomasbester.github.io/CocktailApp/index.html"
+        "Link": "https://jamesthomasbester.github.io/CocktailApp/index.html",
+        "Code": "https://github.com/jamesthomasbester/CocktailApp"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@ const projects =     [
         "datetime": "November 20, 2021 12:35:49 PM",
         "Tag": "Javascript",
         "Image": "weather.png",
-        "Link": "https://jamesthomasbester.github.io/WeatherApp/"
+        "Link": "https://jamesthomasbester.github.io/WeatherApp/",
+        "Code": "https://github.com/jamesthomasbester/WeatherApp"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@ const projects =     [
         "datetime": "November 20, 2021 12:35:49 PM",
         "Tag": "Javascript",
         "Image": "dailyTask.png",
-        "Link": "https://jamesthomasbester.github.io/DailyTaskScheduler/"
+        "Link": "https://jamesthomasbester.github.io/DailyTaskScheduler/",
+        "Code": "https://github.com/jamesthomasbester/DailyTaskScheduler"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@ const projects =     [
         "datetime": "November 20, 2021 12:35:49 PM",
         "Tag": "Javascript",
         "Image": "PasswordGen.png",
-        "Link": "https://jamesthomasbester.github.io/passwordGenerator/"
+        "Link": "https://jamesthomasbester.github.io/passwordGenerator/",
+        "Code": "https://github.com/jamesthomasbester/passwordGenerator"
     },
     {
         "id": 5,
@@ -45,11 +50,21 @@ const projects =     [
         "datetime": "November 20, 2021 12:35:49 PM",
         "Tag": "Javascript",
         "Image": "JavascriptQuiz.png",
-        "Link": "https://jamesthomasbester.github.io/JavascriptQuiz/"
+        "Link": "https://jamesthomasbester.github.io/JavascriptQuiz/",
+        "Code": "https://github.com/jamesthomasbester/JavascriptQuiz"
     }
 ]
 
 var test = ""
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 900){
+        $('.Nav').css('background-color', 'black' )
+    }
+    if(window.scrollY < 900){
+        $('.Nav').css("background-color", "transparent", )
+    }
+})
 
 projects.forEach(element => {
     console.log(element);
@@ -65,6 +80,7 @@ projects.forEach(element => {
                 </figure>
                 <div class='ArticleTitle'>
                     <h4>${element.Title}</h4>
+                    <a href="${element.Code}">repo</a>
                 </div>
             </Link>
         </article>

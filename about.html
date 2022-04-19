@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>James Bester</title>
 </head>
 <body>
-    
+    <!--
+        Top nav
+    -->
+    <header>
+        <nav class="Nav">
+            <div class="NavContainer">
+                <a class="NavLogo" href='/'>
+                    James Bester  <i class="fas fa-robot"></i>
+                </a>
+            </div>
+            <div class="HamburgerMenu">
+                <ul>
+                    <li>
+                        <a class="NavLink" href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a class="NavLink" href='/about'>About</a>
+                    </li>
+                    <li>
+                        <a class="NavLink" href='/projects' >Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="about-me-page">
+            <!--
+                About me
+            -->
+            <div class="about-me">
+                <h2>About Me</h2>
+                <img src="./assets/FB_IMG_1616107929614.jpg#zoom=fitH" alt="profile">
+                <h3>I'm an IT specialist, that is currently studying Full Stack Web Development at monash university</h3>
+                <div class="links">
+                    <a href="mailto:jamesthomasbester@gmail.com"><i class="fa-solid fa-at"></i></a>
+                </div>
+            </div>
+            <!--
+                Resume
+            -->
+            <div class="resume">
+                <iframe src="./assets/Resume.pdf"></iframe>
+            </div>
+        </main>
+    </header>
 </body>
 </html>
