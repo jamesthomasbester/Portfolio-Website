@@ -54,8 +54,8 @@ const projects =     [
         "Code": "https://github.com/jamesthomasbester/JavascriptQuiz"
     }
 ]
-
-var test = ""
+var mobile = false;
+var projectCard = ""
 
 window.addEventListener("scroll", () => {
     if(window.scrollY > 900){
@@ -64,11 +64,12 @@ window.addEventListener("scroll", () => {
     if(window.scrollY < 900){
         $('.Nav').css("background-color", "transparent", )
     }
-})
+});
+
 
 projects.forEach(element => {
     console.log(element);
-    test += `    
+    projectCard += `    
         <article key="" class='ArticleItem'>
             <a class="ArticleLink" href="${element.Link}">
                 <figure class='ArticleTag' data-category="${element.Tag}"> 
@@ -80,12 +81,22 @@ projects.forEach(element => {
                 </figure>
                 <div class='ArticleTitle'>
                     <h4>${element.Title}</h4>
-                    <a href="${element.Code}">repo</a>
+                    <a href="${element.Code}">repo 🔗</a>
                 </div>
             </Link>
         </article>
         `
 })
 
-
-$('#updates').append(test);
+$('#mobile').click(() => {
+    if (mobile == false){
+        $('#HamburgerMenu').css({'top': '0'})
+        mobile = true;
+    }else if(mobile == true){
+        mobile = false;
+        $('#HamburgerMenu').css({'top': '-1000px'})
+    }
+   
+})
+$('#updates').append(projectCard);
+$('#project-page').append(projectCard);
